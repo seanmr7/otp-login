@@ -22,6 +22,7 @@ function Footer() {
           <FaLink className='self-center' />
           <p className='ml-1'>Portfolio</p>
         </a>
+        <p>This app only works with US phone numbers</p>
       </div>
     </footer>
   )
