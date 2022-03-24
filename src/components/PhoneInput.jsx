@@ -31,7 +31,6 @@ function PhoneInput({ setConfirmRes }) {
         'size': 'invisible',
         'callback': (res) => {
           // reCAPTCHA solved, allow signInWithPhoneNumber.
-          console.log('reCAPTCHA solved')
         },
         'expired-callback': () => {
           console.log('Failed')
@@ -41,7 +40,6 @@ function PhoneInput({ setConfirmRes }) {
     )
     signInWithPhoneNumber(auth, phoneNumber, appVerifier)
       .then((res) => {
-        console.log(res)
         setConfirmRes(res)
         toast.success('Code Sent!')
       })
